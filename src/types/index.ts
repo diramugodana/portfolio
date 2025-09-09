@@ -41,7 +41,11 @@ export interface ProjectProps {
 export interface AboutProps {
   description: string;
   image: string;
+  // NEW optional fields your About.astro accepts
+  resumePath?: string;
+  specializations?: { title: string; body: string }[];
 }
+
 
 export interface HeaderProps {
   siteLogo: string;
