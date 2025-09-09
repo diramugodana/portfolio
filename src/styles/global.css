@@ -1,14 +1,23 @@
 @import "tailwindcss";
 
+/* Base theme scales + fonts */
 @theme {
   --font-sans: "Be Vietnam Pro", system-ui, sans-serif;
   --font-serif: "Gabarito Variable", ui-serif, serif;
 
-  --color-primary: #2563eb;
-  --color-neutral: #94a3b8;
-  --color-white: #e2e8f0;
-  --color-black: #0e141b;
+  /* 🌸 Soft pastel palette (no loud colors) */
+  --color-primary: #f4c2d7;      /* blush (primary accent) */
+  --color-neutral: #b5c0cd;      /* soft slate for body text */
+  --color-white: #f7f8fb;        /* off-white for text on dark */
+  --color-black: #131418;        /* very dark charcoal background */
 
+  /* supporting pastels for subtle surfaces */
+  --accent-1: #fde6ef;           /* light blush */
+  --accent-2: #dff2e8;           /* mint */
+  --accent-3: #ece2fb;           /* lilac */
+  --accent-4: #ffe4cf;           /* peach */
+
+  /* type scale (unchanged) */
   --text-xs: 0.875rem;
   --text-xs--line-height: 1.125rem;
   --text-sm: 1rem;
@@ -41,13 +50,76 @@
   --tracking-tight: -0.25px;
 
   --animate-slide-in: slide-in 600ms ease both;
-
   @keyframes slide-in {
-    10% {
-      transform: translateY(-100%);
-    }
-    100% {
-      transform: translateY(0);
-    }
+    10% { transform: translateY(-100%); }
+    100% { transform: translateY(0); }
   }
 }
+
+/* === Pastel UI baseline === */
+html, body { height: 100%; }
+body {
+  font-family: var(--font-sans);
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+/* Headings should be soft/neutral (not bright primary) */
+
+h4, h5, h6 {
+  color: var(--color-primary);
+}
+
+/* Links: calm by default, blush on hover */
+a { color: var(--color-white); text-decoration: none; }
+a:hover { color: var(--color-primary); }
+
+/* Cards: gentle pastel wash on dark */
+.card {
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 1.5rem;
+  background:
+    color-mix(in oklab, var(--accent-1) 10%, transparent);
+}
+
+/* Buttons: soft pastel with readable text */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  padding: 0.65rem 1.1rem;
+  font-weight: 600;
+  border: 1px solid rgba(255,255,255,0.14);
+  transition: filter 160ms ease, transform 120ms ease;
+}
+
+.btn-primary {
+  background: var(--color-primary);   /* blush */
+  color: #1a1a1a;                     /* readable on blush */
+}
+.btn-primary:hover { filter: brightness(1.06); }
+
+.btn-secondary {
+  background: var(--accent-2);        /* mint */
+  color: #1a1a1a;
+}
+.btn-secondary:hover { filter: brightness(1.06); }
+
+/* Muted paragraph text */
+.text-neutral { color: var(--color-neutral); }
+
+/* Hero: very soft background wash */
+.section-gradient {
+  background:
+    radial-gradient(1000px 650px at 20% -10%, var(--accent-1) 0%, transparent 70%),
+    radial-gradient(900px 600px at 90% 10%, var(--accent-2) 0%, transparent 70%),
+    radial-gradient(800px 580px at 50% 110%, var(--accent-3) 0%, transparent 70%);
+}
+
+.position {
+  color: var(--color-white);   /* blush */
+  font-weight: 600;
+}
+
