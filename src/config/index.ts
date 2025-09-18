@@ -88,15 +88,15 @@ export const SITE_CONTENT: SiteContent = {
       name: "Adaptive Swahili-Language AI Tutor (RAG)",
       summary:
         "Bilingual tutor for Form 1 Biology & Geography. Uses OCR + RAG (LangChain + OpenAI API) to retrieve textbook content and generate Swahili/English answers side by side.",
-      linkPreview: "/",
-      linkSource: "https://github.com/diramugodana/swahili-tutor",
+      
+      linkSource: "https://github.com/diramugodana/ai_tutor",
       image: "/tutor.png",
     },
     {
       name: "AI-Powered Multilingual Flashcard Generator with TTS",
       summary:
         "Interactive web app for bilingual learners. Users upload academic documents to generate English and Swahili flashcards with GPT-4 summaries, TTS audio, theme switching, and session history.",
-      linkPreview: "/",
+
       linkSource: "https://github.com/diramugodana/flashcard-app",
       image: "/flashcards.png",
     },
@@ -105,8 +105,8 @@ export const SITE_CONTENT: SiteContent = {
       name: "Shop Nest – Women’s E-Commerce Platform",
       summary:
         "Developed a full-stack e-commerce website using Flask, HTML, and CSS. Implemented product listings, cart management, and checkout flow with dynamic routing, template rendering, and session-based user interactions.",
-      linkPreview: "/",
-      linkSource: "https://github.com/diramugodana/shop-nest",
+
+      linkSource: "https://github.com/diramugodana/ShopNest",
       image: "/shopnest.png",
     }, 
 
@@ -114,7 +114,6 @@ export const SITE_CONTENT: SiteContent = {
       name: "Nairobi After – Immersive Web Narrative",
       summary:
         "Built a modular, scroll-driven storytelling engine with HTML5, CSS3, and vanilla JS. Implemented autonomous chapter rendering, glitch animations, ambient audio control, and UI state toggles for fullscreen, sound, and autoscroll.",
-      linkPreview: "/",
       linkSource: "https://github.com/diramugodana/nairobi-after",
       image: "/nairobi-after.png",
     }
@@ -131,7 +130,7 @@ I’ve led projects like a bilingual AI tutor that integrates OCR and Retrieval-
 Beyond academics, I serve as Associate Director of Engagement for Harvard WECode and as Secretary of the Harvard African Students Association.
     `,
     image: "/me.jpg",
-    resumePath: "/Diramu_Godana_Resume.pdf",
+    resumePath: "/Resume.pdf",
     specializations: [
       {
         title: "AI for Education (RAG)",
