@@ -4,7 +4,7 @@ export const SITE_CONFIG: SiteConfig = {
   title: "Diramu Godana — CS & AI",
   author: "Diramu Godana",
   description:
-    "Junior at Harvard studying CS and Economics. Interested in AI for education, data-driven systems, and socially grounded computing.",
+    "Harvard student in Computer Science and Economics. Passionate about AI for education, socially grounded computing, and data-driven systems.",
   lang: "en",
   siteLogo: "/me.jpg",
   navLinks: [
@@ -23,144 +23,142 @@ export const SITE_CONFIG: SiteConfig = {
 export const SITE_CONTENT: SiteContent = {
   hero: {
     name: "Diramu Godana",
-    specialty: "CS & Economics at Harvard",
+    specialty: "Computer Science & Economics at Harvard",
     summary:
-      "Junior at Harvard pursuing CS with a secondary in Economics. Building AI tutors, data systems, and socially grounded tech projects.",
+      "Undergraduate at Harvard studying CS and Economics. Building bilingual AI tutors, healthcare software, and data-driven systems for social impact.",
     email: "diramugodana@college.harvard.edu",
   },
 
   experience: [
     {
-      company: "Adaptive Swahili-Language AI Tutor (Harvard College Research Program)",
-      position: "Project Lead",
-      startDate: "Jan 2025",
-      endDate: "Present",
+      company: "Harvard College GenAI Research Program",
+      position: "Software Engineering Intern",
+      startDate: "Jun 2025",
+      endDate: "Aug 2025",
       summary: [
-        "Developed an AI-powered bilingual tutor to bridge the gap for Kenyan high school students, who learn from English textbooks but often grasp concepts more easily in Swahili, the common spoken language.",
-        "Implemented OCR preprocessing to extract and normalize textbook content from PDFs, preparing it for retrieval.",
-        "Built a Retrieval-Augmented Generation (RAG) pipeline with LangChain and the OpenAI API, using chunked embeddings, vector search, and strict relevance filtering for curriculum alignment.",
-        "Designed a front-end with a dual-language UI, displaying side-by-side Swahili and English answers to support comprehension and language learning.",
-        "Extended functionality to handle end-of-chapter revision questions, ensuring generated answers remain textbook-consistent.",
+        "Built a bilingual RAG tutor enabling Swahili-speaking students to access curriculum-aligned content.",
+        "Processed 1K+ textbook chunks with LangChain, Pinecone, and GPT-4 Turbo, achieving 95% retrieval accuracy.",
+        "Designed RESTful APIs and optimized PostgreSQL schemas in FastAPI for chapter- and question-level queries.",
+        "Developed three tutor modes (summarization, revision Q&A, free-form) with a Next.js/Tailwind frontend and FastAPI backend, achieving <2s response times.",
+        "Piloted with 56 students; dual-language (English + Swahili) output improved comprehension and aligned with syllabus.",
       ],
     },
-
     {
       company: "Kerugoya County Referral Hospital — Kerugoya, Kenya",
-      position: "Software Development Intern",
+      position: "Software Engineering Intern / Priscilla Chan Fellow",
       startDate: "Jun 2024",
       endDate: "Aug 2024",
       summary: [
-        "Contributed to the design and implementation of a digital patient management system, automating records for 1,000+ patients.",
-        "Developed ERP and EMR modules with Java, Python, and Frappe, integrating with MySQL, REST APIs, and Docker.",
-        "Participated in Agile cycles, code reviews, and testing to ensure system reliability.",
+        "Built a hospital management portal automating records, billing, and scheduling for 1,000+ patients, cutting wait times by 30%.",
+        "Developed ERP/EMR modules in Java/Python with Frappe, deployed via Docker, and integrated MySQL + REST APIs.",
+        "Worked across Agile sprints on feature design, reviews, debugging, and testing; reduced post-deployment defects by 25%.",
       ],
     },
-
     {
-      company:
-        "Harvard Undergraduate Machine Intelligence Community — Self-Learning Assistant",
-      position: "Team Member",
-      startDate: "Jan 2024",
+      company: "Harvard Undergraduate Machine Intelligence Community (HUMIC)",
+      position: "Project Lead & Web Scraping Engineer",
+      startDate: "Sep 2024",
       endDate: "Present",
       summary: [
-        "Collaborated in the HUMIC incubator on a self-learning assistant.",
-        "Used CrewAI to build a multi-agent system with specialized retriever, summarizer, and planner agents working collaboratively.",
-        "Explored applications across education, finance, and biology while addressing ethical considerations in multi-agent design.",
-        "Worked in a student-led team handling role assignment, workload balance, and iterative prototyping.",
+        "Promoted from Fellow to Project Lead; developed Harvard’s first self-learning assistant using CrewAI multi-agent frameworks.",
+        "Built web scraping pipelines with Python (BeautifulSoup, Requests) and BraveSearch API to collect educational content.",
+        "Coordinated profiling, ranking, and roadmap teams integrating user data for personalized learning.",
       ],
     },
-
+    {
+      company: "Harvard WECode",
+      position: "Associate Director of Engineering",
+      startDate: "Sep 2025",
+      endDate: "Present",
+      summary: [
+        "Co-develop WECode’s inaugural engineering portal for the world’s largest student-run women-in-tech conference (1,200+ attendees).",
+        "Implement authentication, registration, and event logistics using React and Supabase.",
+        "Oversee technical planning, code reviews, and deployment cycles ensuring scalability and maintainability.",
+      ],
+    },
     {
       company: "Nyeri Hospice — Nyeri, Kenya",
       position: "Software Development Intern",
       startDate: "Jul 2019",
       endDate: "Aug 2019",
       summary: [
-        "Built a DeskAlert system with Python, JavaScript, and Node.js to improve patient–provider communication.",
-        "Integrated REST APIs for real-time alerts and notifications, enhancing data flow and departmental coordination.",
-        "Streamlined billing and resource tracking with SQL, boosting administrative efficiency.",
+        "Built a DeskAlert messaging system in Python, Node.js, and MySQL to coordinate staff-patient communication.",
+        "Implemented message queuing and logging to improve reliability and reduce response times by 40%.",
       ],
     },
   ],
 
   projects: [
     {
-      name: "Adaptive Swahili-Language AI Tutor (RAG)",
+      name: "Adaptive Swahili-English AI Curriculum Tutor",
       summary:
-        "Bilingual tutor for Form 1 Biology & Geography. Uses OCR + RAG (LangChain + OpenAI API) to retrieve textbook content and generate Swahili/English answers side by side.",
-      
+        "AI-powered bilingual tutor for Form 1 Biology, built with LangChain, Pinecone, GPT-4 Turbo, and FastAPI. Supports summarization, revision Q&A, and free-form modes with dual-language (Swahili + English) output.",
       linkSource: "https://github.com/diramugodana/ai_tutor",
       image: "/tutor.png",
     },
     {
+      name: "WECode Conference Platform",
+      summary:
+        "Full-stack platform for authentication, registration, and mentorship matching. Built with React, Supabase, and CI/CD pipelines for reliability and scalability.",
+      linkSource: "https://github.com/diramugodana/wecode-platform",
+      image: "/wecode.png",
+    },
+    {
       name: "AI-Powered Multilingual Flashcard Generator with TTS",
       summary:
-        "Interactive web app for bilingual learners. Users upload academic documents to generate English and Swahili flashcards with GPT-4 summaries, TTS audio, theme switching, and session history.",
-
+        "Interactive bilingual learning app that generates English and Swahili flashcards with GPT-4 summaries, TTS audio, and a pastel-themed interface.",
       linkSource: "https://github.com/diramugodana/flashcard-app",
       image: "/flashcards.png",
     },
-    
     {
-      name: "Shop Nest – Women’s E-Commerce Platform",
+      name: "Nairobi After — Immersive Web Narrative",
       summary:
-        "Developed a full-stack e-commerce website using Flask, HTML, and CSS. Implemented product listings, cart management, and checkout flow with dynamic routing, template rendering, and session-based user interactions.",
-
-      linkSource: "https://github.com/diramugodana/ShopNest",
-      image: "/shopnest.png",
-    }, 
-
-    {
-      name: "Nairobi After – Immersive Web Narrative",
-      summary:
-        "Built a modular, scroll-driven storytelling engine with HTML5, CSS3, and vanilla JS. Implemented autonomous chapter rendering, glitch animations, ambient audio control, and UI state toggles for fullscreen, sound, and autoscroll.",
+        "Scroll-based digital story built with HTML, CSS, and JS. Features glitch animations, ambient soundscapes, and dynamic chapter transitions.",
       linkSource: "https://github.com/diramugodana/nairobi-after",
       image: "/nairobi-after.png",
-    }
-    
-    
+    },
   ],
 
   about: {
     description: `
-I’m a junior at Harvard studying Computer Science with a secondary in Economics. My interests lie in AI for education, socially grounded computing, and building tools that bridge technical depth with real-world use cases.
+I'm a Harvard student studying Computer Science and Economics, passionate about AI for education, data systems, and socially grounded computing.
 
-I’ve led projects like a bilingual AI tutor that integrates OCR and Retrieval-Augmented Generation for curriculum alignment, contributed to healthcare software systems in Kenya, and worked on multi-agent learning assistants with HUMIC.
+My work spans AI tutoring systems, healthcare automation, and digital storytelling. I've interned at Kerugoya County Referral Hospital, built a bilingual AI tutor through the Harvard GenAI Research Program, and led HUMIC's multi-agent self-learning assistant.
 
-Beyond academics, I serve as Associate Director of Engagement for Harvard WECode and as Secretary of the Harvard African Students Association.
+I also serve as Associate Director of Engineering for Harvard WECode and as Secretary of the Harvard African Students Association.
     `,
     image: "/me.jpg",
     resumePath: "/Resume.pdf",
     specializations: [
       {
-        title: "AI for Education (RAG)",
+        title: "AI for Education (RAG Systems)",
         body:
-          "OCR → chunking → embeddings → vector search for textbook-aligned answers.",
+          "Textbook chunking → embeddings → vector search → dual-language answer generation.",
+      },
+      {
+        title: "Backend Engineering",
+        body:
+          "FastAPI, PostgreSQL, REST APIs, Docker, Pinecone vector stores.",
+      },
+      {
+        title: "Frontend Design",
+        body:
+          "Next.js, React, Tailwind — clean pastel-themed UIs for learning tools.",
       },
       {
         title: "Data & Algorithms",
         body:
-          "Triangle counting, Strassen crossover, runtime & accuracy benchmarking.",
-      },
-      {
-        title: "Web Interfaces",
-        body:
-          "Clean bilingual UIs; accessible, pastel-forward layouts.",
+          "Triangle counting, Strassen matrix multiplication, runtime analysis.",
       },
       {
         title: "Multi-Agent Systems",
         body:
-          "CrewAI agents (retriever, planner, summarizer) for self-learning assistants.",
-      },
-      {
-        title: "Backend Basics",
-        body:
-          "REST APIs, SQL, Docker for pragmatic prototypes.",
+          "CrewAI agents for retrieval, summarization, and adaptive self-learning workflows.",
       },
       {
         title: "Product & Research",
         body:
-          "Scope, iteration cycles, clear documentation and demos.",
+          "Iterative development, curriculum alignment, and evaluation for real-world impact.",
       },
     ],
   },
