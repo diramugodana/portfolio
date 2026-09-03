@@ -40,7 +40,7 @@ export const SITE_CONTENT: SiteContent = {
       endDate: "Aug 2026",
       summary: [
         "Built the Context Agent for an AI labor-market intelligence platform, converting anomalies surfaced from ~42M member profiles and 7.6M job postings into structured investigations and grounded evidence for generated labor-market articles.",
-        "Engineered source scoring, deduplication, support/challenge balancing, provenance tracking, and bundle-sufficiency checks, increasing hypothesis/query plans meeting the highest quality tier from 5.7% to 76.4% and usable evidence bundles from 2.1% to 90%.",
+        "Engineered source scoring, deduplication, support/challenge balancing, provenance tracking, and bundle-sufficiency checks, increasing hypothesis/query plans meeting the highest quality tier from 5.7% to 86.4% and usable evidence bundles from 2.1% to 90%.",
         "Built an end-to-end Economic Graph pipeline that identified top-growth industries, ranked their fastest-growing companies across size bands, validated each signal with postings, views, applications, and role mix, and generated evidence-backed articles; surfaced 111 Tier-1 opportunities from 407 candidates across 9 industries.",
         "Extended LinkedIn’s HERO Generative Recommender evaluation stack across PySpark, Flyte, and OpenHouse, adding an underserved-job benchmark, slice-aware semantic metrics, and leakage controls for 1.08M held-out member-job pairs; evaluated 3,982 jobs and found a 17.3 percentage-point Good-Fit P@200 gap between underserved jobs and the existing benchmark.",
       ],
